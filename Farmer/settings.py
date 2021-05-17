@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'yieldf.apps.YieldfConfig',
     'index.apps.IndexConfig',
     'disease.apps.DiseaseConfig',
     'crop.apps.CropConfig',

@@ -25,7 +25,7 @@
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="{% url 'crop' %}">CROP</a></li>
                     <li><a href="{% url 'disease' %}">Disease</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="{% url 'yieldf' %}">Yield</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
 
         <div class="row">
             <div class="col-md-12">
-              <form action="{% url 'submit' %}" method="post">
+              <form action="{% url 'submit-crop' %}" method="post">
                   <br>
                 <h1> Find out the most suitable crop to grow in your farm
                 </h1>
