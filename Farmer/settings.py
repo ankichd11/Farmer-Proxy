@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'disease.apps.DiseaseConfig',
+    'crop.apps.CropConfig',
     'soil.apps.SoilConfig',
     'django.contrib.admin',
     'django.contrib.auth',
