@@ -36,7 +36,7 @@
 
         <div class="row">
             <div class="col-md-12">
-              <form action="index.html" method="post">
+              <form action="{% url 'submit' %}" method="post">
                   <br>
                 <h1> Find out the most suitable crop to grow in your farm
                 </h1>
@@ -69,11 +69,15 @@
                   <input type="number" name="rainfall">
 
                   <label for="email">Grow Crop:</label>
-                  <span><strong>Crop Predicted</strong></span>
+                  <span><strong>Crop Predicted
+                    {% for r in res%}
+                      <p>{{r}}</p>
+                      {%endfor%}
+                  </strong></span>
 
                 </fieldset>
 
-                <button class="btn-default-new" type="submit">Get Crop!</button>
+                <button class="btn-default-new" type="submit">{% csrf_token %}Get Crop!</button>
 
                </form>
                 </div>
