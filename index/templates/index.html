@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+{%load static%}
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Farm Proxy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html">Farm Proxy</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="{% url 'crop' %}">CROP</a></li>
+                    <li><a href="{% url 'disease' %}">Disease</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header style="  background: linear-gradient(to right,#052c169d, #00000000), url('https://images.unsplash.com/uploads/141247613151541c06062/c15fb37d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80') no-repeat top center;">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>FARM PROXY</h1>
+                <p>Get to know about your farm and everything about your crop here</p>
+            </div>
+        </div>
+    </header>
+    <section class="about-section bg-color" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <h3>About us</h3>
+                    <p>We use state-of-the-art machine learning and deep learning technologies to help you guide through the entire farming process. Make informed decisions to understand the demographics of your area, understand the factors that affect your crop and keep them healthy for a super awesome successful yield.</p>
+                    <p>IMPROVING AGRICULTURE, IMPROVING LIVES, CULTIVATING CROPS TO MAKE FARMERS INCREASE PROFIT.</p> <a href="#services" class="btn btn-default-new">Learn about our services</a> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section" id="services">
+        <div class="container">
+             <h3>service</h3>
+
+            <div id="grid">
+                <div>
+                    <div class="service-items">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+                        </div>
+                        <h4><a href="#"> CROP</a></h4>
+                        <p>Recommendation about the type of crops to be cultivated which is best suited for the respective conditions</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="service-items">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                        </div>
+                        <h4><a href="#">DISEASE DETECTION</a></h4>
+                        <p>Predicting the name and causes of crop disease and suggestions to cure it</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <h3>Let's Get In Touch!</h3>
+                    <p>IMPROVING AGRICULTURE, IMPROVING LIVES, CULTIVATING CROPS TO MAKE FARMERS INCREASE PROFIT.</p>
+                    <br>
+                    <div id="grid">
+                        <div>
+                            <span class="glyphicon glyphicon-earphone"></span>
+                            <a href="tel:123456789">123-456-789</a>
+                        </div>
+                        <div>
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            <a href="mailto:get@bootstrap.com">farmer@helpcontact.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="{% static 'animate.js' %}">
+
+    </script>
+
+  </body>
+
+
+
+</html>
