@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-{%load static%}
+ {%load static%}
 
 <html lang="en">
 
@@ -31,55 +30,35 @@
             </div>
         </div>
     </nav>
+    <div id="container-box">
 
-    <header style="  background: linear-gradient(to right,#052c169d, #00000000), url('https://images.unsplash.com/uploads/141247613151541c06062/c15fb37d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80') no-repeat top center;">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>FARM PROXY</h1>
-                <p>Get to know about your farm and everything about your crop here</p>
-            </div>
-        </div>
-    </header>
-    <section class="about-section bg-color" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                    <h3>About us</h3>
-                    <p>We use state-of-the-art machine learning and deep learning technologies to help you guide through the entire farming process. Make informed decisions to understand the demographics of your area, understand the factors that affect your crop and keep them healthy for a super awesome successful yield.</p>
-                    <p>IMPROVING AGRICULTURE, IMPROVING LIVES, CULTIVATING CROPS TO MAKE FARMERS INCREASE PROFIT.</p> <a href="#services" class="btn btn-default-new">Learn about our services</a> </div>
-            </div>
-        </div>
-    </section>
+        <div class="row">
+            <div class="col-md-12">
+              <form action="index.html" method="post">
+                  <br>
+                <h1> Upload a picture of your crop
+                </h1>
+                <br>
 
-    <section class="service-section" id="services">
-        <div class="container">
-             <h3>service</h3>
 
-            <div id="grid">
-                <div>
-                    <div class="service-items">
-                        <div class="icon">
-                            <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
-                        </div>
-                        <h4><a href="#"> CROP</a></h4>
-                        <p>Recommendation about the type of crops to be cultivated which is best suited for the respective conditions</p>
-                    </div>
+                <fieldset>
+                    <label for="img" class="image-preview">Nitrogen:</label>
+                    <input name="img"  id="img" class="input-preview__src" type="file">
+                </fieldset>
+
+                <button class="btn-default-new" type="submit">Detect!</button>
+
+               </form>
                 </div>
+              </div>
 
-                <div>
-                    <div class="service-items">
-                        <div class="icon">
-                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                        </div>
-                        <h4><a href="#">DISEASE DETECTION</a></h4>
-                        <p>Predicting the name and causes of crop disease and suggestions to cure it</p>
 
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
+    </div>
+
+
+
+
 
     <footer id="contact">
         <div class="container">
@@ -104,8 +83,6 @@
         </div>
 
     </footer>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
