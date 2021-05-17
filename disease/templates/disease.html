@@ -24,7 +24,7 @@
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="{% url 'crop' %}">CROP</a></li>
                     <li><a href="{% url 'disease' %}">Disease</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="{% url 'yieldf' %}">Yield</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -34,7 +34,8 @@
 
         <div class="row">
             <div class="col-md-12">
-              <form action="index.html" method="post">
+              <form action="{% url 'submit-d' %}" method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
                   <br>
                 <h1> Upload a picture of your crop
                 </h1>
@@ -49,6 +50,11 @@
                 <button class="btn-default-new" type="submit">Detect!</button>
 
                </form>
+                <span><strong>Disease Predicted
+                      <p>{{res}}</p>
+
+                  </strong></span>
+
                 </div>
               </div>
 
